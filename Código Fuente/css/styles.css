@@ -1,0 +1,71 @@
+.body{
+    background: DimGray;
+}
+.imagen{
+	background-image: url(../imagenes/titulo.jpg);
+	width:100%;
+	height:0%;
+	height:120px;
+}
+.titulo{
+	font-size: 20px ;
+	font-style: Italic ;
+	color: Solid black;
+	text-align: center;
+	background: white;
+	height: 12%;
+}
+.section{
+    width:70%;
+    height:600px;
+    background: AliceBlue;
+    margin: 40px 200px;
+    border-top-width: 10px;
+    border-right-width: 1em;
+    border-bottom-width: thick;
+    border-left-width: thin;
+}
+
+.encabezado{
+  text-align: center;
+  font-style: verdana;
+  color: MidnightBlue;
+  font-size: 30px;
+  width:100%;
+  height:8%;
+  background: white;
+}
+
+.input{
+	position: left;
+	top:;
+	background: AliceBlue;
+	bottom:;
+	right:;
+	left:80px;	
+}
+
+.grafica{
+    position:;
+    top:;
+	text-align: left;
+	background: AliceBlue;
+    bottom:;
+    right:;
+    left:200px;
+}
+.button{
+	background: LightSteelBlue  ;
+	height: 40px;
+	font-size: 20px;
+	position: center;
+}
+.h2{
+	text-align:center;
+	height: 60px;
+}
+
+.h3{
+	height: 50px;
+	border: 4px;
+}

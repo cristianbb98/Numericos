@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<libreria>
+  <libro category="COOKING">
+    <titulo>Harry Potter</titulo>
+    <costo>10</costo>
+  </libro>
+  <libro category="COOKING">
+    <titulo>Juegos de Hambre</titulo>
+    <costo>12</costo>
+  </libro>
+</libreria>

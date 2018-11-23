@@ -1,0 +1,43 @@
+body{
+    background:url(../imagenes/images.jpg);
+}
+section{
+  width:70%;
+  height:900px;
+  background:white;
+  margin: 40px 200px;
+}
+
+.encabezado{
+  width:100%;
+  height:100px;
+  background:blue;
+  margin:;
+}
+
+.input{
+  position: relative;
+  top:;
+  bottom:;
+  right:;
+  left:80px;
+}
+
+.grafica{
+  position: relative;
+  top:;
+  bottom:;
+  right:;
+  left:200px;
+}
+}
+
+
+h1{
+  position: relative;
+  top:;
+  bottom:;
+  right:;
+  left:80px;
+  font-size: 3000px
+}

@@ -1,0 +1,33 @@
+
+.main {
+  text-align: center;
+	width: 900px;
+	margin: 0 auto;
+	background-color: green;
+	color: white;
+	margin-bottom: 50px;
+}
+
+.input{
+  text-align: center;
+  width: 900px;
+  margin: 0 auto;
+  background-color: orange;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.php{
+  text-align : center;
+  width: 900px;
+  margin: 0 auto;
+  background-color: blue;
+  color: white;
+  margin-bottom: 100px;
+    font-size: 20px
+}
+
+
+h2{
+  text-align: center;
+}

@@ -1,0 +1,9 @@
+body{
+    background:url(../imagen/1514435579127.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+		background-attachment: fixed;
+    color:;
+    text-align : center;
+    font-size: 20px;
+}

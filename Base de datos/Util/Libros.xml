@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="xslt.xsl" type="text/xsl"?>
+<!DOCTYPE bookstore SYSTEM "libros.dtd">
+
+xmlns="https://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="../Libros.xsd">
+<bookstore>
+
+ <book nombre="Cien años de soledad">
+   <title lang="es">Cien Años de Soledad</title>
+   <autor>Gabriel Garcia Marquez</autor>
+   <isbn>9780307474728</isbn>
+   <year>1967</year>
+   <paginas>496</paginas>
+   <precio>13.41</precio>
+ </book>
+
+ <book nombre="Ensayo sobre la ceguera">
+   <title lang="es">Ensayo sobre la ceguera</title>
+   <autor>Jose Saramago</autor>
+   <isbn>9788490628720</isbn>
+   <year>1995</year>
+   <paginas>376</paginas>
+   <precio>10.76</precio>
+ </book>
+
+ <book nombre="Desgracia">
+   <title lang="es">Desgracia</title>
+   <autor>Novela de J. M. Coetzee</autor>
+   <isbn>9789700516967</isbn>
+   <year>1999</year>
+   <paginas>218</paginas>
+   <precio>13.50</precio>
+ </book>
+
+ <book nombre="Del amor y otros demonios">
+   <title lang="es">Del amor y otros demonios</title>
+   <autor>Gabriel Garcia Marquez</autor>
+   <isbn>9780307475350</isbn>
+   <year>1994</year>
+   <paginas>176</paginas>
+   <precio>12.51</precio>
+ </book>
+
+ <book nombre="El hombre duplicado">
+   <title lang="es">El hombre duplicado</title>
+   <autor>Jose Saramago</autor>
+   <isbn>9788490628751</isbn>
+   <year>2002</year>
+   <paginas>408</paginas>
+   <precio>10.12</precio>
+ </book>
+
+  <book nombre="El inmoralista">
+    <title lang="es">El inmoralista</title>
+    <autor>Andres Gide</autor>
+    <isbn>9789877251159</isbn>
+    <year>1902</year>
+    <paginas>168</paginas>
+    <precio>12</precio>
+  </book>
+
+  <book nombre="El viejo y el mar">
+    <title lang="es">El viejo y el mar</title>
+    <autor>Ernest Miller Hemingway</autor>
+    <isbn>9788497594585</isbn>
+    <year>1952</year>
+    <paginas>127</paginas>
+    <precio>
+</precio>
+  </book>
+
+   <book nombre="Ensayo sobre la ceguera"></book>
+    <title lang="es">Ensayo sobre la ceguera</title>
+    <autor>Jose Saramago</autor>
+    <isbn>9788490628720</isbn>
+    <year>1995</year>
+    <paginas>376</paginas>
+    <precio>10.76</precio>
+
+
+</bookstore>

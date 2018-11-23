@@ -1,0 +1,29 @@
+
+// $sql = "CREATE TABLE Empleado(
+// idEmpleado VARCHAR(16) PRIMARY KEY,
+// Nombre VARCHAR(16) NOT NULL,
+// Apellido VARCHAR(16) NOT NULL,
+// Telefono VARCHAR(16),
+// Direccion VARCHAR(32)
+// )";
+
+// $sql = "CREATE TABLE Factura(
+// idFactura VARCHAR(16) PRIMARY KEY,
+// PrecioTotal INT(8) NOT NULL,
+// CantidadTotal INT(4) NOT NULL,
+// FechaFactura DATE,
+// idEmpleado VARCHAR(16) NOT NULL,
+// idCliente VARCHAR(16) NOT NULL,
+// FOREIGN KEY (idEmpleado) REFERENCES Empleado(idEmpleado),
+// FOREIGN KEY (idCliente) REFERENCES Cliente(idCliente)
+// )";
+
+// $sql = "CREATE TABLE Detalle(
+// idDetalle VARCHAR(16) PRIMARY KEY,
+// SubTotal INT(8) NOT NULL,
+// Cantidad INT(4) NOT NULL,
+// idFactura VARCHAR(16) NOT NULL,
+// idProducto VARCHAR(16) NOT NULL,
+// FOREIGN KEY (idFactura) REFERENCES Factura(idFactura),
+// FOREIGN KEY (idProducto) REFERENCES Producto(idProducto)
+// )";

@@ -1,0 +1,16 @@
+<!DOCTYPE bookstore[
+<!ELEMENT bookstore (book+)>
+<!ELEMENT book (title,autor,isbn,year,paginas,precio)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT isbn (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT paginas (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST title CDATA #REQUIRED>
+<!ATTLIST autor CDATA #REQUIRED>
+<!ATTLIST isbn CDATA #REQUIRED>
+<!ATTLIST year CDATA #REQUIRED>
+<!ATTLIST paginas CDATA #REQUIRED>
+<!ATTLIST precio CDATA #REQUIRED>
+]>

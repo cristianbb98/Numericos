@@ -1,0 +1,42 @@
+<librosLeidos>
+  <book nombre="Cien años de soledad">
+    <title lang="es">Cien Anos de Soledad</title>
+    <autor>Gabriel Garcia Marquez</autor>
+    <isbn>9780307474728</isbn>
+    <año>1967</año>
+    <paginas>496</paginas>
+    <precio>13.41</precio>
+  </book>
+  <book nombre="Ensayo sobre la ceguera">
+    <title lang="es">Ensayo sobre la ceguera</title>
+    <autor>Jose Saramago</autor>
+    <isbn>9788490628720</isbn>
+    <year>1995</year>
+    <paginas>376</paginas>
+    <precio>10.76</precio>
+  </book>
+  <book nombre="Desgracia">
+    <title lang="es">Ensayo sobre la ceguera</title>
+    <autor>Novela de J. M. Coetzee</autor>
+    <isbn>9789700516967</isbn>
+    <year>1999</year>
+    <paginas>218</paginas>
+    <precio>13.50</precio>
+  </book>
+  <book nombre="Del amor y otros demonios">
+    <title lang="es">Del amor y otros demonios</title>
+    <autor>Gabriel Garcia Marquez</autor>
+    <isbn>9780307475350</isbn>
+    <año>1994</año>
+    <paginas>176</paginas>
+    <precio>12.51</precio>
+  </book>
+  <book nombre="El hombre duplicado">
+    <title lang="es">El hombre duplicado</title>
+    <autor>Jose Saramago</autor>
+    <isbn>9788490628751</isbn>
+    <año>2002</año>
+    <paginas>408</paginas>
+    <precio>10.12</precio>
+  </book>
+</librosLeidos>

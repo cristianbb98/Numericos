@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <title>GRAFICADOR DE FUNCIONES - GeoGebra</title>        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+                <!-- Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#6161FF">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#6161FF">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#6161FF">
+
+        <meta property="og:title" content="GRAFICADOR DE FUNCIONES" />
+<meta property="og:description" content="El siguiente applet permite al alumno graficar funciones y comparar con la construccion de funciones en clase." />
+<meta property="og:site_name" content="GeoGebra" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://cdn.geogebra.org/material/roRmANbuK0Lg8sSnzsBL43WbFnB6MPDE/material-bTeqvAnf.png" />
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:site" content="@geogebra" />
+<meta property="fb:app_id" content="185307058177853" />
+<meta property="article:published_time" content="2015-08-14" />
+<meta property="article:publisher" content="https://www.facebook.com/geogebra" />
+        <link rel="stylesheet" type="text/css" href="GeoGebra/includes/css/structure.ltr.css?v=1512462651" />
+        <link rel="stylesheet" type="text/css" href="GeoGebra/includes/css/screen.ltr.css?v=1512462651" media="screen and (min-width: 769px)" />
+        <link rel="stylesheet" type="text/css" href="GeoGebra/includes/css/tablet.ltr.css?v=1512462651" media="screen and (min-width: 641px) and (max-width: 768px)" />
+        <link rel="stylesheet" type="text/css" href="GeoGebra/includes/css/phone.ltr.css?v=1512462651" media="screen and (min-width: 0px) and (max-width: 640px)" />
+        <link rel="stylesheet" type="text/css" href="GeoGebra/css/general.ltr.css?v=1512462651" />
+                <link rel="stylesheet" type="text/css" href="GeoGebra/css/worksheet/ws.view.ltr.css?v=1512462651" />
+
+        <link href="GeoGebra/css/wysibb/default/wbbtheme.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="GeoGebra/css/wysibb/wysibb.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="GeoGebra/css/group/groups.ltr.css?v=1512462651" media="screen" rel="stylesheet" type="text/css" />
+<link href="GeoGebra/css/compiled.css?v=1512462651" media="screen" rel="stylesheet" type="text/css" />
+                    <script type="text/javascript" src="GeoGebra/scripts/jquery.min.js?v=1512462651"></script>
+        
+        <script type="text/javascript" src="GeoGebra/scripts/jquery.simplemodal.js?v=1512462651"></script>
+        <script type="text/javascript" src="GeoGebra/scripts/worksheet/ws-header-footer.js?v=1512462651"></script>
+
+        
+        <script type="text/javascript" src="GeoGebra/scripts/jlatexmath/texthandlers.js?v=1512462651"></script>
+<script type="text/javascript" src="GeoGebra/scripts/jlatexmath/jlatexmath.js"></script>
+<script type="text/javascript" src="GeoGebra/scripts/jlatexmath/jlatexmath-tube.js"></script>
+<script type="text/javascript">
+    //<![CDATA[
+    window.GGBT_texthandlers.setLatexRenderer("jlatexmath");    //]]>
+</script>
+<script type="text/javascript">
+    //<![CDATA[
+    
+                function escapeHtml(text) {
+                  return text
+                      .replace(/(&)/g, "&amp;")
+                      .replace(/(<)/g, "&lt;") 
+                      .replace(/(>)/g, "&gt;")
+                      .replace(/(")/g, "&quot;")
+                      .replace(/(')/g, "&#039;");
+                }
+
+                function GGBT_parseLatexes() {
+                  if (window.GGBT_texthandlers.isLatexRenderer("mathquill")) {
+                        $(".mathquill-embedded-latex").mathquill();
+                    } else {
+                        window.GGBT_jlatexmath.drawLatexOnjQuery($(".jlatexmath"));
+                    }
+                }
+                jQuery(document).ready(function(e) {
+                    var content = $(".bbcode-text");
+                    content.each(function(index) {
+                        var html = window.GGBT_texthandlers.getHTMLFromBBCode(escapeHtml($(this).text())),
+                            t = $(this);
+                            t.removeClass("bbcode-text");
+                            t.html(html);
+                    });
+                    if (window.GGBT_ws_header_footer) {
+                        window.GGBT_ws_header_footer.setWsScrollerHeight();
+                    }
+                });
+                 jQuery(window).on("resize",function(e) {
+                    GGBT_parseLatexes();
+                });
+                document.addEventListener("DOMContentLoaded", function(e) {
+                    window.GGBT_parseLatexes();
+                });
+                //]]>
+</script>
+<script type="text/javascript" src="GeoGebra/scripts/general.original.js"></script>
+<script type="text/javascript" src="GeoGebra/scripts/general.original.js?v=1512462651"></script>
+<script type="text/javascript" src="GeoGebra/scripts/worksheet/general.js?v=1512462651"></script>
+<script type="text/javascript" src="GeoGebra/scripts/worksheet/view.js?v=1512462651"></script>
+<script type="text/javascript">
+    //<![CDATA[
+    
+                    window.GGBT_wsf_view.setDefaults({
+                        input: {
+                            text: {
+                                toolbar: {"math":{"text":"Matem&aacute;tica","title":"Inserta Matem&aacute;tica"},"icons":{"text":"Iconos","title":"Insertar iconos de herramientas de GeoGebra"},"text":{"title":"Herramientas de texto"}},
+                                dlg_math: {"title":"Editar Matem&aacute;tica","btn_basic":"B&aacute;sico","btn_greek":"Griego","btn_operators":"Operadores","btn_relationships":"Relaciones","btn_arrows":"Flechas","btn_delimiters":"Separadores","btn_misc":"Miscel&aacute;nea"},
+                                dlg_icons: {"title":"Seleccionar un icono"},
+                                wysibb_lang: ""
+                            }
+                        },
+                        useplaybutton: true
+                    });
+    
+                    //]]>
+</script>
+<script type="text/javascript" src="GeoGebra/scripts/spin.js?v=1512462651"></script>
+<script type="text/javascript" src="GeoGebra/scripts/spinner.js?v=1512462651"></script>
+<script type="text/javascript" src="GeoGebra/scripts/deployggb.js?v=1512462651"></script>
+<script type="text/javascript" src="GeoGebra/scripts/objects/timeago/jquery.timeago.js?v=1512462651"></script>
+<script type="text/javascript">
+    //<![CDATA[
+    
+            jQuery.timeago.settings.cutoff = 7*24*60*60*1000;
+            jQuery.timeago.settings.allowFuture = true;
+            //]]>
+</script>
+<script type="text/javascript" src="GeoGebra/scripts/objects/timeago/locales/jquery.timeago.en.js?v=1512462651"></script>        <script type="text/javascript">
+            //<![CDATA[
+            var ROOT_URL = 'https://www.geogebra.org';
+            var BASE_URL = 'https://www.geogebra.org';
+            var lang_confirm = "¿Estás seguro de que deseas llevar a cabo esta operación? ¡Es probable que no se pueda deshacer!";
+            var age_label = "Edad:";
+            //]]>
+        </script>
+
+    </head>
+
+    <body class="ws">
+
+    
+<div class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <div style="direction: ltr">
+
+        
+            
+<div class="j-ws-header sWs-header " data-title="GRAFICADOR DE FUNCIONES">
+
+<ul class="sWs-title">
+    <li>
+        <a class="sWs-logo icon icon-header-logo jCancel jClose"
+           href="https://www.geogebra.org"
+           title="Cerrar la ventana y volver al registro de evaluaci&oacute;n"
+           data-confirm="">
+        </a>
+    </li>
+</ul>
+
+
+    <ul class="sWs-tools jWs-tools" data-id="1484049" data-pe_id=""
+        data-user_id="5844645"
+        data-loginmsg=""
+        data-loginurl=""
+        data-inbook=""
+        data-saveurl=""
+        data-yes="S&iacute;" data-no="No" data-cancel="Cancelar">
+
+
+    
+                
+        
+        
+
+    
+                <li><a class="active-icon icon-share"
+           href="https://www.geogebra.org/material/show/id/bTeqvAnf#share-popup"           title="Compartir este recurso con los dem&aacute;s"
+           ></a></li>
+    
+        </ul>
+
+
+    
+    <div class="clear"></div>
+</div>
+
+
+    
+    <!-- Popup dialog for editing materials that are used in other books -->
+    <div id="popup-edit-inotherbook" class="message-dialog" style="display:none;">
+        <div class="message-text">
+            Esta hoja de trabajo tambi&eacute;n es parte uno o m&aacute;s libros. Las modificaciones se registrar&aacute;n en todos ellos. &iquest;Deseas cambiar la versi&oacute;n original o, en su lugar, crear una copia propia para este libro en particular?        </div>
+        <br/>
+        <span class="button-bar">
+        <button class="button edit-original-edit">Editar esta hoja de trabajo</button>
+        <button class="button edit-original-copy">Crear una copia</button>
+    </span>
+    </div>
+    <!-- Popup dialog for editing materials that are used in other books END -->
+
+    <!-- Popup dialog for editing materials owned by other users -->
+    <div id="popup-edit-hasotherowner" class="message-dialog" style="display:none;">
+        <div class="message-text">
+            Esta hoja de trabajo fue creada por '{$1}'. &iquest;Deseas modificar la versi&oacute;n original o, en su lugar, crear una nueva copia propia?        </div>
+        <br/><br/>
+        <span class="button-bar">
+        <button class="button edit-original-edit">Editar esta hoja de trabajo</button>
+        <button class="button edit-original-copy">Crear una copia</button>
+    </span>
+    </div>
+    <!-- Popup dialog for editing materials owned by other users END -->
+
+    <!-- Popup dialog for editing materials without edit rights -->
+    <div id="popup-edit-noeditrights" class="message-dialog" style="display:none;">
+        <div class="message-text">
+            Esta hoja fue creada por '{$1}' y no tienes permiso para editarla. &iquest;Quieres crear una copia y agregarla a tu libro?        </div>
+        <br/><br/>
+        <span class="button-bar">
+        <button class="button edit-original-copy">Crear una copia</button>
+        <button class="button cancel">Cancelar</button>
+    </span>
+    </div>
+    <!-- Popup dialog for editing materials without edit rights END -->    <script>
+        window.GGBT_ws_header_footer.setDefaults({
+            msg_favorite_add: "El material &#39;{$1}&#39; fue añadido a tus favoritos.",
+            msg_favorite_remove: "El material &#39;{$1}&#39; fue eliminado de tus favoritos.",
+            btn_favorite_view: "Ver los materiales favoritos",
+            btn_ok: "OK",
+            favorites_url: "/user/profile/id/5844645/p/favorites"
+        });
+    </script>
+
+
+            <div class="wsf-ws-scroller " data-id="1484049" data-mode="view" data-taskisro="true" data-taskissaveable="false" data-grouptype="" >
+                <div class="wsf-wrapper">
+
+                    
+                    <!-- APPENDWORKSHEETSCRIPTS starts --><!-- APPENDWORKSHEETSCRIPTS ends -->
+<div class="worksheet_tbl" data-appmode="">
+    <script type="text/javascript">
+        window.worksheet_applet_ids_1484049 = [];
+    </script>
+    <h1 itemprop="headline" class="wsf-worksheet-title"
+        >GRAFICADOR DE FUNCIONES            </h1>
+    
+    <div id="worksheet_element_4154473" class="worksheet_element wsf-content-added content-added-content" data-mat-id="4154473" data-type="T" >
+
+    
+<div class="ws-element-header notitle">
+    <ul class="wsf-buttons wsf-element-toolbar">
+
+    </ul>
+    <div class="clear"></div>
+</div>
+
+            <div class="ws-element-text bbcode-text">El siguiente applet permite graficar funciones.</div>
+
+    
+        
+    </div>
+
+    <div id="worksheet_element_4154474" class="worksheet_element wsf-content-added content-added-content" data-mat-id="4154474" data-type="G" >
+
+    
+<div class="ws-element-header notitle">
+    <ul class="wsf-buttons wsf-element-toolbar">
+
+    </ul>
+    <div class="clear"></div>
+</div>
+
+            <div style="padding: 0" class="ws-element-applet">
+
+                <div class="applet_container" id="applet_container_1484049">
+    </div>
+<script type="text/javascript">
+    var parameters = {"id":"ggbApplet1484049","width":1098,"height":584,"showToolBar":false,"showMenuBar":false,"showAlgebraInput":false,"allowStyleBar":false,"showResetIcon":true,"enableLabelDrags":false,"enableShiftDragZoom":true,"enableRightClick":false,"showToolBarHelp":false,"errorDialogsActive":true,"useBrowserForJS":false,"ggbBase64":"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","language":"es","isPreloader":false,"screenshotGenerator":false,"preventFocus":true,"showSplash":false,"scale":1,"fixApplet":false,"prerelease":false,"playButtonAutoDecide":true,"playButton":false,"canary":false,"allowUpscale":false};
+    parameters.appletOnLoad = function() {
+        if (typeof $ === "function" && window.GGBT_wsf_view !== undefined) {
+            var container =  $("#applet_container_1484049");
+            window.GGBT_wsf_view.postProcessApplet(container.parents('.content-added-content'));
+        }
+    };
+    /** is3D=is 3D applet using 3D view, AV=Algebra View, SV=Spreadsheet View, CV=CAS View, EV2=Graphics View 2, CP=Construction Protocol, PC=Probability Calculator, DA=Data Analysis, FI=Function Inspector, macro=Macro View */
+    var views = {"is3D":0,"AV":0,"SV":0,"CV":0,"EV2":0,"CP":0,"PC":0,"DA":0,"FI":0,"PV":0,"macro":0};
+    var applet_1484049 = new GGBApplet('5.0', parameters, views, true);
+
+    if ((navigator.appVersion.indexOf('MSIE')+1?parseFloat(navigator.appVersion.split('MSIE')[1]):999) < 11) { // WebGL is supported since IE 11
+        applet_1484049.setHTML5Codebase('GeoGebra/HTML5/5.0/web/', 'true');
+    } else {
+        applet_1484049.setHTML5Codebase('GeoGebra/HTML5/5.0/web3d/', 'true');
+    }
+    applet_1484049.setPreviewImage('GeoGebra/files/material-bTeqvAnf.png', 'GeoGebra/images/GeoGebra_loading.png', null);
+    var appletType_1484049 = 'auto';
+    $(function($) {
+        applet_1484049.inject('applet_container_1484049', 'auto');
+    });
+</script>
+            <script type="text/javascript">
+                window.worksheet_applet_ids_1484049.push(1484049);
+            </script>
+        </div>
+
+            
+        
+    </div>
+
+    <div id="worksheet_element_4154475" class="worksheet_element wsf-content-added content-added-content" data-mat-id="4154475" data-type="T" >
+
+    
+<div class="ws-element-header notitle">
+    <ul class="wsf-buttons wsf-element-toolbar">
+
+    </ul>
+    <div class="clear"></div>
+</div>
+
+            <div class="ws-element-text bbcode-text">* evaluar varias funciones y describir su comportamiento en el intervalo [-10, 10][br]* graficar la funcion, sin(x), cos(x) y tan(x), analizar para cada una los puntos máximos y mínimos.[br]* graficar la funcion cot(x) y analice su comportamiento para 5 intervalos diferentes.</div>
+
+    
+        
+    </div>
+
+
+    <div class="save-wrapper" data-saveurl="/worksheet/saveexercise/id/bTeqvAnf">
+        <div class="wsf-btn-bar-left">
+                    </div>
+    </div>
+
+</div>
+
+                                            
+<div id="save-info-inprogress" class="msg-box" style="display: none">
+    <div class="message">Guardando&hellip;</div>
+</div>
+<div id="save-info-successful" class="msg-box" style="display: none">
+    <div class="message">Se han guardado todos los cambios</div>
+</div>
+<div id="save-info-error" class="msg-box" style="display: none">
+    <div class="message general">Error</div>
+    <div class="message error_timeout_retry" style="display: none">Se ha agotado el tiempo de espera. Tratando de volver a guardar ..</div>
+    <div class="message error_timeout" style="display: none">Disculpa, el servidor no responde. Espera unos minutos e intenta guardarlo de nuevo.</div>
+</div>
+                                    </div>
+
+                
+
+
+<div class="jWS-footer sWs-footer">
+    <div class="sWs-footer-content">
+        <a class="sWs-GeoGebra" href="https://www.geogebra.org"></a>
+            &#0150;
+        <span itemprop="creator" class="sWs-footer-contributors" itemscope itemtype="http://schema.org/Person"> <a href="https://www.geogebra.org/nariveraf"><span class="notranslate" itemprop="name">NAYIBE RIVERA FERNANDEZ</span></a></span>    
+
+        </div>
+</div>
+
+            </div>
+
+            <div class="wsf-info-wrapper">
+
+        <div class="wsf-info-scroller">
+            <div class="wsf-wrapper">
+                <a class="wsf-button-information-close" title="Ocultar informaci&oacute;n"></a>
+                <h1 id="wsf-info-title" class="wsf-title">Informaci&oacute;n: GRAFICADOR DE FUNCIONES</h1>
+                <ul id="wsf-content-info"></ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        if (window.GGBT_wsf_general) {
+            window.GGBT_wsf_general.setDefaults({
+                base_url: "https://www.geogebra.org",
+                base_path: "GeoGebra",
+                info: {
+                    wsfButtonInformation : {
+                        title: {
+                            show: "Mostrar informaci&oacute;n para esta construcci&oacute;n",
+                            hide: "Ocultar informaci&oacute;n"
+                        }
+                    },
+                    title: {
+                        text : "Informaci&oacute;n"
+                    }
+                },
+                url: {
+                    link: "Enlace"                }
+            });
+        }
+    </script>
+
+            </div>
+
+</div>
+        <div class="ajax-loading-glass"></div>
+    </body>
+</html>
